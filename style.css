@@ -9,15 +9,30 @@ h1,h2{
 .navbar-brand{
     font-family: "Lora", serif;
 }
+ .header{
+        height: 700px;
+        width: 100%;
+        background-image: url('images/header.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        }
+        
+     .header h3{
+        font-size:40px;
+        font-weight:700;
+        margin-top:235px;
+    } 
 
+ /*   
 .header-title{
     font-size: 48px;
     font-weight: bold;
 }
-
+*/
 .yellow{
     background-color: #ffd43a;
-    color:black;
+    color:black; 
 }
 
 .green{
@@ -86,4 +101,103 @@ section{
     color:white;
     padding: 3%;
     text-align: center;
+}
+
+/* .card-container{
+    display:flex;
+    justify-content: center;
+    height:100vh;
+    align-items:center;
+}
+.card-container-2{
+    display:flex;
+}
+.card-div{
+    height:500px;
+    margin:50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+.card-div img{
+    height:500px;
+    width:350px;
+    border-radius:3px;
+}
+
+.intro{
+    height:200px;
+    width:350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position:absolute;
+    background: rgba(27,27,27,0);
+    color:yellow;
+}
+
+.card-div h1{
+    margin: 10px;
+    font-size: 40px;
+}
+
+.card-div p{
+    margin: 20px;
+    font-size: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card-div:hover{
+    cursor:pointer
+}
+.card-div:hover .intro{
+    height:220px;
+    bottom:240px;
+    background: black;
+}
+.card-div:hover p{
+    opacity:1;
+    visibility: visible;
+}
+.card-div:hover img{
+    transform: scale(1.1),rotate(-3d);
+} */
+
+.card-image {
+            position: relative;
+            /* width: 100%; */
+            text-align: center;
+            width: 400px;
+            height: 300px;
+            padding:20px;
+        }
+.card-image:hover img{
+    transform: scale(1.1),rotate(-3d);
+}
+.text-container {
+            position: absolute;
+            color: rgb(255, 255, 255);
+            left: 50%;
+            top: 100%;
+            width:50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(41, 41, 41, 0.8); 
+            padding: 0.5rem;
+            text-align: center;
+            font-size: 16px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.text-container p{
+    /* margin: 20px; */
+    font-size: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+.card-image:hover p{
+    opacity:1;
+    visibility: visible;
+}
+.card-image:hover{
+    transform:scale(1.05);
+    transition:all 0.3s ease-in-out;
 }
